@@ -1,0 +1,36 @@
+# Byte-compiled / optimized Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# Project-specific files and directories
+*.egg-info/
+dist/
+build/
+*.egg
+*.egg-info
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+
+# Logs and temporary files
+*.log
+*.bak
+*.cache
+*.csv
+
+# Miscellaneous
+*.bak
+*.tmp
+*.swp
+.DS_Store
