@@ -4,9 +4,8 @@ from snake import Snake
 from food import Food
 from scoreBord import ScoreBored
 
-FILE = open("data.txt", mode="r+")
-
-HIGH_SCORE = FILE.read()
+with open("snakeGame/data.txt", "r") as file:
+    HIGH_SCORE = file.read()
 
 
 screen = Screen()
@@ -38,12 +37,11 @@ while game_is_on:
 
     if snake.segments[0].xcor() > 280 or snake.segments[0].xcor() < -280 or snake.segments[0].ycor() > 280 or snake.segments[0].ycor() < -282:
         snake.reset()
-        scoreBord.reset(FILE)
+        scoreBord.reset()
 
     for s in snake.segments[1:]:
         if snake.head.distance(s) < 10:
             snake.reset()
-            scoreBord.reset(FILE)
+            scoreBord.reset()
 
 screen.exitonclick()
-FILE.close()

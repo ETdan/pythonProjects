@@ -1,8 +1,6 @@
 from turtle import Turtle
 
 
-
-
 class ScoreBored(Turtle):
 
     def __init__(self, HIGH_SCORE):
@@ -19,10 +17,11 @@ class ScoreBored(Turtle):
         self.clear()
         self.write(arg=f"Score: {self.score} High Score: {self.high_score}", move=False, align="center", font=("Arial", 12, "bold"))
 
-    def reset(self, FILE):
+    def reset(self):
         if self.score > self.high_score:
             self.high_score = self.score
-            FILE.write(str(self.high_score))
+            with open("snakeGame/data.txt", "w") as file:
+                file.write(str(self.high_score))
         self.score = 0
         self.clear()
         self.write(arg=f"Score: {self.score} High Score: {self.high_score}", move=False, align="center", font=("Arial", 12, "bold"))
