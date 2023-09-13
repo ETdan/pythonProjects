@@ -1,5 +1,11 @@
 <h1> password manager </h1>
 
-feauters
-1 save passwords 
-2 search passworsd
+<h2> feauters </h2>
+<ol>
+ <li>
+   save passwords 
+ </li>
+ <li>
+    search passworsd
+ </li>   
+</ol>
