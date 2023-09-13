@@ -8,4 +8,9 @@
  <li>
     search passworsd
  </li>   
+ <li>
+    simple GUI
+ </li>   
 </ol>
+
+<img src="./GUI_image.png" alt="image of the GUI">
